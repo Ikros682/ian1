@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fruitables - Vegetable Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#"
+                            class="text-white">Jl.Cempaka Raya No.299 RT:6 RW:8 Jakarta,Indonesia</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#"
+                            class="text-white">ian.valentino88@gmail.com</a></small>
+                </div>
+                <div class="top-link pe-2">
+                    <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary display-6">Miramar vegetables and Fruitables</h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="shop.html" class="nav-item nav-link">Shop</a>
+                        <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="cart.html" class="dropdown-item">Cart</a>
+                                <a href="chackout.html" class="dropdown-item">Checkout</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="" class="dropdown-item"></a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-flex m-0 me-0">
+                        <button
+                            class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                            data-bs-toggle="modal" data-bs-target="#searchModal"><i
+                                class="fas fa-search text-primary"></i></button>
+                        <a href="#" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                            <span
+                                class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
+                                style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                        </a>
+                        <a href="login.html" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-12 col-lg-7">
+                    <h4 class="mb-3 text-secondary">100% Organic Foods</h4>
+                    <h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number"
+                            placeholder="Search">
+                        <button type="submit"
+                            class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100"
+                            style="top: 0; right: 25%;">Submit Now</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active rounded">
+                                <img src="img/hero-img-1.png" class="img-fluid w-100 h-100 bg-secondary rounded"
+                                    alt="First slide">
+                                <a href="#" class="btn px-4 py-2 text-white rounded">Fruites</a>
+                            </div>
+                            <div class="carousel-item rounded">
+                                <img src="img/hero-img-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                <a href="#" class="btn px-4 py-2 text-white rounded">Vesitables</a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Featurs Section Start -->
+    <div class="container-fluid featurs py-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-car-side fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Free Shipping</h5>
+                            <p class="mb-0">Free on order over $300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-user-shield fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>Security Payment</h5>
+                            <p class="mb-0">100% security payment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>30 Day Return</h5>
+                            <p class="mb-0">30 day money guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                        <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                            <i class="fa fa-phone-alt fa-3x text-white"></i>
+                        </div>
+                        <div class="featurs-content text-center">
+                            <h5>24/7 Support</h5>
+                            <p class="mb-0">Support every time fast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featurs Section End -->
+
+
+    <!-- Fruits Shop Start-->
+    <div class="container-fluid fruite py-5">
+        <div class="container py-5">
+            <div class="tab-class text-center">
+                <div class="row g-4">
+                    <div class="col-lg-4 text-start">
+                        <h1>Our Organic Products</h1>
+                    </div>
+                    <div class="col-lg-8 text-end">
+                        <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
+                                    href="#tab-1">
+                                    <span class="text-dark" style="width: 130px;">All Products</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
+                                    <span class="text-dark" style="width: 130px;">Vegetables</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
+                                    <span class="text-dark" style="width: 130px;">Fruits</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
+                                    <span class="text-dark" style="width: 130px;">Breads</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
+                                    <span class="text-dark" style="width: 130px;">Meats</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/kangkung1.1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Water Spinach</h4>
+                                                <p>Spinach is a nutrient-rich leafy green, packed with vitamins, iron, and antioxidants for a health boost in every bite. Its tender texture and mild flavor make it perfect for salads, smoothies, or sautéed in your favorite dishes. Enjoy fresh, vibrant spinach for a wholesome addition to any meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.87 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/kembang kol1.1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Cauliflower</h4>
+                                                <p>Cauliflower is a versatile, nutrient-dense vegetable, packed with fiber, vitamins, and antioxidants. Its mild flavor and tender crunch make it perfect for roasting, mashing, or even replacing carbs in your favorite dishes. Enjoy fresh cauliflower for a wholesome, low-calorie addition to any meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$3.75 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/vegetable-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Broccoli</h4>
+                                                <p>Broccoli is a nutrient-packed powerhouse, loaded with vitamins,
+                                                    fiber, and antioxidants. With its crisp texture and fresh flavor,
+                                                    it’s perfect for roasting, steaming, or adding to your favorite
+                                                    dishes. A healthy, delicious way to fuel your body—broccoli makes
+                                                    eating green easy and enjoyable!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.92 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/carrot1.1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Carrots</h4>
+                                                <p>Carrots are a naturally sweet and crunchy superfood, packed with
+                                                    vitamins, especially Vitamin A, and essential nutrients. Perfect for
+                                                    snacking, juicing, or adding to your favorite recipes, our carrots
+                                                    offer a fresh, vibrant taste that’s as nutritious as it is
+                                                    delicious!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$2.77 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-3.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Bananas</h4>
+                                                <p>Bananas are a naturally sweet, energy-boosting snack, rich in
+                                                    potassium, fiber, and essential vitamins. Their creamy texture and
+                                                    convenient, portable size make them perfect for on-the-go,
+                                                    smoothies, or adding to your favorite recipes. Enjoy the wholesome
+                                                    goodness of a banana anytime!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$1.95 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Oranges</h4>
+                                                <p>Oranges are a burst of refreshing citrus flavor, packed with vitamin
+                                                    C and antioxidants to support your immune system. With their juicy,
+                                                    tangy-sweet taste, they’re perfect for snacking, juicing, or
+                                                    brightening up any dish. Enjoy the sunshine in every bite with our
+                                                    fresh, zesty oranges!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$2.85 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Grapes</h4>
+                                                <p>Grapes are a juicy, delicious fruit bursting with natural sweetness and packed with antioxidants. Perfect for snacking, adding to salads, or complementing a cheese board, our grapes are carefully selected for their vibrant flavor and freshness. Enjoy a healthy, refreshing treat that’s as versatile as it is tasty!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$3.37 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Raspberries</h4>
+                                                <p>Raspberries are a delightful, tangy-sweet fruit, rich in flavor and packed with vitamins and antioxidants. Their vibrant color and delicate texture make them perfect for snacking, baking, or topping your favorite desserts. Enjoy the fresh, juicy taste of nature’s perfect bite-sized treat!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$6.85 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/baguette.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Baguette</h4>
+                                                <p> baguette is a classic French delight, with a crisp, golden crust and a soft, airy interior. Baked fresh daily, it’s perfect for sandwiches, dipping, or enjoying on its own. Experience the authentic taste and texture of a traditional baguette, bringing a touch of France to your table!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.04 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/white bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>White Bread</h4>
+                                                <p>Discover the soft, fluffy perfection of our premium white bread, baked fresh daily with the finest ingredients. Perfectly golden on the outside and irresistibly tender on the inside, it's the ideal choice for sandwiches, toast, or a delicious snack. With a classic taste that brings comfort and warmth to every bite, our white bread elevates every meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.30 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/garlic bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Garlic Bread</h4>
+                                                <p>Indulge in the rich, savory flavor of our delicious garlic bread, crafted with freshly baked, golden-brown loaves and infused with a perfect blend of garlic, herbs, and butter. Crispy on the outside, soft and buttery on the inside, it's the ultimate side dish to elevate any meal. Whether you're serving it with pasta, soup, or as a stand-alone snack, our garlic bread adds a burst of irresistible flavor to every bite!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$8.00 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/banana bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Banana Bread</h4>
+                                                <p>Savor the homemade goodness of our moist, flavorful banana bread, baked to perfection with ripe bananas and a hint of sweetness. Soft, rich, and full of natural flavor, it's the perfect treat for breakfast, a midday snack, or dessert. Whether you enjoy it on its own or with a spread, our banana bread delivers a comforting, delicious taste in every slice!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$5.00 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/goat.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Goat Loin Chops</h4>
+                                                <p>Discover the tender, flavorful excellence of our premium goat loin chops, sourced from the finest cuts for a rich, succulent taste. Perfectly suited for grilling, roasting, or pan-searing, these chops offer a delicate balance of lean meat and natural flavor. Elevate your meals with the unique, savory goodness of our goat loin chops, ideal for those seeking a gourmet, wholesome dining experience!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$22.78 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/pork.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Pork Tenderloin</h4>
+                                                <p>Our goat pork tenderloin is a premium cut known for its tenderness and rich flavor. Expertly sourced and perfectly marbled, this lean and succulent meat is ideal for grilling, roasting, or searing. Elevate your meals with the gourmet taste of goat pork tenderloin, perfect for special occasions or everyday indulgence!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$10.27 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/chicken breast.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Chicken Breast</h4>
+                                                <p>Experience the tender, juicy perfection of our premium chicken breast, carefully sourced and prepared for exceptional quality. Naturally lean and packed with protein, it’s versatile and perfect for grilling, roasting, or adding to your favorite recipes. Whether you're creating a healthy meal or a flavorful dish, our chicken breast offers unbeatable freshness and taste with every bite!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.30 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/ground beef.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Ground Beef</h4>
+                                                <p>Enjoy the rich, hearty flavor of our high-quality ground beef, made from premium cuts for unbeatable freshness and taste. Perfect for burgers, tacos, pasta, and more, it's versatile and easy to cook for any meal. Packed with protein and flavor, our ground beef is the ideal choice for creating mouthwatering dishes that your family will love!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$22.39 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/kangkung1.1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Water Spinach</h4>
+                                                <p>Spinach is a nutrient-rich leafy green, packed with vitamins, iron, and antioxidants for a health boost in every bite. Its tender texture and mild flavor make it perfect for salads, smoothies, or sautéed in your favorite dishes. Enjoy fresh, vibrant spinach for a wholesome addition to any meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.87 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/kembang kol1.1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Cauliflower</h4>
+                                                <p>Cauliflower is a versatile, nutrient-dense vegetable, packed with fiber, vitamins, and antioxidants. Its mild flavor and tender crunch make it perfect for roasting, mashing, or even replacing carbs in your favorite dishes. Enjoy fresh cauliflower for a wholesome, low-calorie addition to any meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$3.75 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/vegetable-item-2.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Broccoli</h4>
+                                                <p>Broccoli is a nutrient-packed powerhouse, loaded with vitamins, fiber, and antioxidants. With its crisp texture and fresh flavor, it’s perfect for roasting, steaming, or adding to your favorite dishes. A healthy, delicious way to fuel your body—broccoli makes eating green easy and enjoyable!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.92 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/carrot1.1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Vegetables</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Carrots</h4>
+                                                <p>Carrots are a naturally sweet and crunchy superfood, packed with vitamins, especially Vitamin A, and essential nutrients. Perfect for snacking, juicing, or adding to your favorite recipes, our carrots offer a fresh, vibrant taste that’s as nutritious as it is delicious!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$2.77 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-3.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Bananas</h4>
+                                                <p>Bananas are a naturally sweet, energy-boosting snack, rich in potassium, fiber, and essential vitamins. Their creamy texture and convenient, portable size make them perfect for on-the-go, smoothies, or adding to your favorite recipes. Enjoy the wholesome goodness of a banana anytime!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$1.95 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Oranges</h4>
+                                                <p>Oranges are a burst of refreshing citrus flavor, packed with vitamin C and antioxidants to support your immune system. With their juicy, tangy-sweet taste, they’re perfect for snacking, juicing, or brightening up any dish. Enjoy the sunshine in every bite with our fresh, zesty oranges!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$2.85 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Grapes</h4>
+                                                <p>Grapes are a juicy, delicious fruit bursting with natural sweetness and packed with antioxidants. Perfect for snacking, adding to salads, or complementing a cheese board, our grapes are carefully selected for their vibrant flavor and freshness. Enjoy a healthy, refreshing treat that’s as versatile as it is tasty!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$3.37 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Fruits</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Raspberries</h4>
+                                                <p>Raspberries are a delightful, tangy-sweet fruit, rich in flavor and packed with vitamins and antioxidants. Their vibrant color and delicate texture make them perfect for snacking, baking, or topping your favorite desserts. Enjoy the fresh, juicy taste of nature’s perfect bite-sized treat!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$6.85 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/baguette.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Baguette</h4>
+                                                <p>baguette is a classic French delight, with a crisp, golden crust and a soft, airy interior. Baked fresh daily, it’s perfect for sandwiches, dipping, or enjoying on its own. Experience the authentic taste and texture of a traditional baguette, bringing a touch of France to your table!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.04 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/white bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>White Bread</h4>
+                                                <p>Discover the soft, fluffy perfection of our premium white bread, baked fresh daily with the finest ingredients. Perfectly golden on the outside and irresistibly tender on the inside, it's the ideal choice for sandwiches, toast, or a delicious snack. With a classic taste that brings comfort and warmth to every bite, our white bread elevates every meal!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.30 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/garlic bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Garlic Bread</h4>
+                                                <p>Indulge in the rich, savory flavor of our delicious garlic bread, crafted with freshly baked, golden-brown loaves and infused with a perfect blend of garlic, herbs, and butter. Crispy on the outside, soft and buttery on the inside, it's the ultimate side dish to elevate any meal. Whether you're serving it with pasta, soup, or as a stand-alone snack, our garlic bread adds a burst of irresistible flavor to every bite!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$8.00 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/banana bread.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Breads</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Banana Bread</h4>
+                                                <p>Savor the homemade goodness of our moist, flavorful banana bread, baked to perfection with ripe bananas and a hint of sweetness. Soft, rich, and full of natural flavor, it's the perfect treat for breakfast, a midday snack, or dessert. Whether you enjoy it on its own or with a spread, our banana bread delivers a comforting, delicious taste in every slice!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$5.00 / G</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-5" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/goat.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Goat Loin Chops</h4>
+                                                <p>Discover the tender, flavorful excellence of our premium goat loin chops, sourced from the finest cuts for a rich, succulent taste. Perfectly suited for grilling, roasting, or pan-searing, these chops offer a delicate balance of lean meat and natural flavor. Elevate your meals with the unique, savory goodness of our goat loin chops, ideal for those seeking a gourmet, wholesome dining experience!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$22.78 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/pork.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Pork Tenderloin</h4>
+                                                <p>Our goat pork tenderloin is a premium cut known for its tenderness and rich flavor. Expertly sourced and perfectly marbled, this lean and succulent meat is ideal for grilling, roasting, or searing. Elevate your meals with the gourmet taste of goat pork tenderloin, perfect for special occasions or everyday indulgence!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$10.27 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/chicken breast.jpg" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Chicken Breast</h4>
+                                                <p>Experience the tender, juicy perfection of our premium chicken breast, carefully sourced and prepared for exceptional quality. Naturally lean and packed with protein, it’s versatile and perfect for grilling, roasting, or adding to your favorite recipes. Whether you're creating a healthy meal or a flavorful dish, our chicken breast offers unbeatable freshness and taste with every bite!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$7.30 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="img/ground beef.jfif" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Meats</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Ground Beef</h4>
+                                                <p>Enjoy the rich, hearty flavor of our high-quality ground beef, made from premium cuts for unbeatable freshness and taste. Perfect for burgers, tacos, pasta, and more, it's versatile and easy to cook for any meal. Packed with protein and flavor, our ground beef is the ideal choice for creating mouthwatering dishes that your family will love!</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">$22.39 / kg</p>
+                                                    <a href="#"
+                                                        class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                                            class="fa fa-shopping-bag me-2 text-primary"></i> Add to
+                                                        cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fruits Shop End-->
+
+
+    <!-- Featurs Start -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-secondary rounded border border-secondary">
+                            <img src="img/featur-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-primary text-center p-4 rounded">
+                                    <h5 class="text-white">Fresh Apples</h5>
+                                    <h3 class="mb-0">20% OFF</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-dark rounded border border-dark">
+                            <img src="img/featur-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-light text-center p-4 rounded">
+                                    <h5 class="text-primary">Tasty Fruits</h5>
+                                    <h3 class="mb-0">Free delivery</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#">
+                        <div class="service-item bg-primary rounded border border-primary">
+                            <img src="img/cabbage1.1.jfif" class="img-fluid rounded-top w-100" alt="">
+                            <div class="px-4 rounded-bottom">
+                                <div class="service-content bg-secondary text-center p-4 rounded">
+                                    <h5 class="text-white">Exotic Vegitables</h5>
+                                    <h3 class="mb-0">Discount 30%</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featurs End -->
+
+
+    <!-- Vesitable Shop Start-->
+    <div class="container-fluid vesitable py-5">
+        <div class="container py-5">
+            <h1 class="mb-0">Fresh Organic Vegetables</h1>
+            <div class="owl-carousel vegetable-carousel justify-content-center">
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/apple.jfif" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Fruits</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Apples</h4>
+                        <p>Apples are a crisp, refreshing snack packed with fiber and essential vitamins. With a perfect balance of sweet and tart flavors, they are versatile for snacking, baking, or adding to salads. Enjoy the wholesome goodness of our fresh apples, a delicious choice for a healthy lifestyle!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$6.34 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/tomatoes.jfif" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Fruits</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Tomatoes</h4>
+                        <p>Tomatoes are a juicy, vibrant fruit bursting with flavor and essential nutrients. Packed with vitamins C and K, they are perfect for salads, sauces, and salsas. Whether enjoyed fresh or cooked, our tomatoes bring a refreshing taste and a pop of color to any dish. Elevate your culinary creations with the garden-fresh goodness of our premium tomatoes!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$5.81 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/mango.jfif" class="img-fluid w-100 rounded-top bg-light" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Fruits</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Mangoes</h4>
+                        <p>Mangoes are the ultimate tropical treat, bursting with sweetness and juicy flavor. Packed with vitamins A and C, these luscious fruits are perfect for snacking, smoothies, or adding a tropical flair to salads and desserts. Indulge in the succulent goodness of our fresh mangoes and experience a taste of paradise in every bite!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$2.68 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/bell.jfif" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Fruits</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Bell Pepper</h4>
+                        <p>Bell peppers are vibrant, crunchy vegetables packed with vitamins A and C, adding a colorful twist to any dish. Available in a range of colors—red, yellow, green, and orange—they're perfect for salads, stir-fries, or stuffing. Enjoy the sweet, mild flavor and crisp texture of fresh bell peppers for a healthy, delicious addition to your meals!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$2.93 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Vegetables</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Potatoes</h4>
+                        <p>Potatoes are a versatile staple in every kitchen, offering endless culinary possibilities. Rich in vitamins and minerals, they can be baked, mashed, roasted, or fried to perfection. Enjoy the comforting taste and hearty texture of our fresh potatoes—ideal for creating delicious meals that satisfy every palate!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$3.96 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Vegetables</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Parsely</h4>
+                        <p>Parsley is a fresh, aromatic herb that adds a burst of flavor and vibrant color to any dish. Rich in vitamins A, C, and K, it's perfect for garnishing soups, salads, and entrees or enhancing your favorite recipes. Elevate your cooking with the bright, zesty taste of our premium parsley for a delicious and nutritious touch!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$3.00 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/lettuce.jfif" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Vegetables</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Lettuce</h4>
+                        <p>Lettuce is a crisp, refreshing leafy green that adds a nutritious crunch to any meal. Low in calories and high in vitamins, it’s perfect for salads, wraps, and sandwiches. Enjoy the fresh, vibrant taste of our premium lettuce, a staple for healthy eating and culinary creativity!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$3.86 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-primary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                        <img src="img/celery.jfif" class="img-fluid w-100 rounded-top" alt="">
+                    </div>
+                    <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        style="top: 10px; right: 10px;">Vegetables</div>
+                    <div class="p-4 rounded-bottom">
+                        <h4>Celery</h4>
+                        <p>Celery is a crunchy, refreshing vegetable known for its crisp texture and subtle flavor. Low in calories and high in fiber, it’s perfect for snacking, adding to salads, or enhancing soups and stews. Enjoy the fresh, wholesome taste of our premium celery for a nutritious boost in every bite!</p>
+                        <div class="d-flex justify-content-between flex-lg-wrap">
+                            <p class="text-dark fs-5 fw-bold mb-0">$3.85 / kg</p>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vesitable Shop End -->
+
+
+    <!-- Banner Section Start-->
+    <div class="container-fluid banner bg-secondary my-5">
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="py-4">
+                        <h1 class="display-3 text-white">Fresh Exotic Fruits and Vegetables</h1>
+                        <p class="fw-normal display-3 text-dark mb-4">in Our Store</p>
+                        <p class="mb-4 text-dark">Discover a vibrant selection of fresh exotic fruits and vegetables at our store, carefully sourced to bring you unique flavors and nutritional benefits. From tropical favorites to rare vegetables, our variety offers a taste of adventure in every bite. Explore new culinary possibilities with our premium exotic produce!</p>
+                        <a href="#"
+                            class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">BUY</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="img/baner-1.png" class="img-fluid w-100 rounded" alt="">
+                        <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute"
+                            style="width: 140px; height: 140px; top: 0; left: 0;">
+                            <h1 style="font-size: 100px;">1</h1>
+                            <div class="d-flex flex-column">
+                                <span class="h2 mb-0">50$</span>
+                                <span class="h4 text-muted mb-0">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+
+    <!-- Bestsaler Product Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h1 class="display-4">Bestseller Products</h1>
+                <p>Our best sellers are customer favorites for a reason—offering top-quality, unbeatable taste, and value. From fresh produce to gourmet treats, these popular products consistently deliver satisfaction. Shop our best sellers today and discover why they’re loved by so many!</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/best-product-1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Oranges</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">2.85 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/best-product-2.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Raspberries</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">6.85 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/best-product-3.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Bananas</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">1.95 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/carrot1.1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Carrots</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">2.77 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/kangkung1.1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Water Spinach</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3">4.87 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <div class="p-4 rounded bg-light">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                <img src="img/kembang kol1.1.jpg" class="img-fluid rounded-circle w-100" alt="">
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="h5">Cauliflower</a>
+                                <div class="d-flex my-3">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="mb-3">3.75 $</h4>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                        class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="text-center">
+                        <img src="img/garlic bread.jfif" class="img-fluid rounded" alt="">
+                        <div class="py-4">
+                            <a href="#" class="h5">Garlic Bread</a>
+                            <div class="d-flex my-3 justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">8.00 $</h4>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="text-center">
+                        <img src="img/banana bread.jfif" class="img-fluid rounded" alt="">
+                        <div class="py-4">
+                            <a href="#" class="h5">Banana Bread</a>
+                            <div class="d-flex my-3 justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">5.00 $</h4>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="text-center">
+                        <img src="img/ground beef.jfif" class="img-fluid rounded" alt="">
+                        <div class="py-4">
+                            <a href="#" class="h5">Ground Beef</a>
+                            <div class="d-flex my-3 justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <h4 class="mb-3">22.39 $</h4>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="text-center">
+                        <img src="img/chicken breast.jpg" class="img-fluid rounded" alt="">
+                        <div class="py-2">
+                            <a href="#" class="h5">Chicken Breast</a>
+                            <div class="d-flex my-3 justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4 class="mb-3">7.30 $</h4>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i
+                                    class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bestsaler Product End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="bg-light p-5 rounded">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>satisfied customers</h4>
+                            <h1>2000</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality of service</h4>
+                            <h1>99%</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>quality certificates</h4>
+                            <h1>40</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="counter bg-white rounded p-5">
+                            <i class="fa fa-users text-secondary"></i>
+                            <h4>Available Products</h4>
+                            <h1>800</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact Start -->
+
+
+    <!-- Tastimonial Start -->
+    <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+            <div class="testimonial-header text-center">
+                <h4 class="text-primary">Our Testimonial</h4>
+                <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    <div class="position-relative">
+                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                            style="bottom: 30px; right: 0;"></i>
+                        <div class="mb-4 pb-4 border-bottom border-secondary">
+                            <p class="mb-0">Great selection of fresh fruits and vegetables at reasonable prices. The staff is friendly, and the market is well-organized, but it can get crowded during peak hours. Overall, a solid spot for quality produce!</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="bg-secondary rounded">
+                                <img src="img/rio.jfif" class="img-fluid rounded"
+                                    style="width: 100px; height: 100px;" alt="">
+                            </div>
+                            <div class="ms-4 d-block">
+                                <h4 class="text-dark">Rio Herlando</h4>
+                                <p class="m-0 pb-3">Highschool Student</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    <div class="position-relative">
+                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                            style="bottom: 30px; right: 0;"></i>
+                        <div class="mb-4 pb-4 border-bottom border-secondary">
+                            <p class="mb-0">the fruits and vegetables are fresh and delicious but unfortunately the
+                                products are quick to sold out.</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="bg-secondary rounded">
+                                <img src="img/rafly.jfif" class="img-fluid rounded"
+                                    style="width: 100px; height: 100px;" alt="">
+                            </div>
+                            <div class="ms-4 d-block">
+                                <h4 class="text-dark">Muhammad Rafly Haitami</h4>
+                                <p class="m-0 pb-3">Highschool Student</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    <div class="position-relative">
+                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                            style="bottom: 30px; right: 0;"></i>
+                        <div class="mb-4 pb-4 border-bottom border-secondary">
+                            <p class="mb-0">Amazing market with fresh, high-quality produce and a wide variety of options. Clean, well-organized, and the staff is very helpful. Highly recommend for anyone looking for top-notch fruits and veggies!</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="bg-secondary rounded">
+                                <img src="img/agus.jfif" class="img-fluid rounded"
+                                    style="width: 100px; height: 100px;" alt="">
+                            </div>
+                            <div class="ms-4 d-block">
+                                <h4 class="text-dark">Agus Setiadi</h4>
+                                <p class="m-0 pb-3">Highschool Student</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    <div class="position-relative">
+                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                            style="bottom: 30px; right: 0;"></i>
+                        <div class="mb-4 pb-4 border-bottom border-secondary">
+                            <p class="mb-0">I like this place because it is close to my house and the products are
+                                fresh.</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="bg-secondary rounded">
+                                <img src="img/adnan.jfif" class="img-fluid rounded"
+                                    style="width: 100px; height: 100px;" alt="">
+                            </div>
+                            <div class="ms-4 d-block">
+                                <h4 class="text-dark">Muhammad Adnan</h4>
+                                <p class="m-0 pb-3">Highschool Student</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                    <div class="position-relative">
+                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
+                            style="bottom: 30px; right: 0;"></i>
+                        <div class="mb-4 pb-4 border-bottom border-secondary">
+                            <p class="mb-0">this place is great, i would recommend it because the fruits are sweet and
+                                juicy.</p>
+                        </div>
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="bg-secondary rounded">
+                                <img src="img/avatar.jpg" class="img-fluid rounded"
+                                    style="width: 100px; height: 100px;" alt="">
+                            </div>
+                            <div class="ms-4 d-block">
+                                <h4 class="text-dark">Rakha Darmawan</h4>
+                                <p class="m-0 pb-3">Highschool Student</p>
+                                <div class="d-flex pe-5">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                    <i class="fas fa-star text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tastimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#">
+                            <h1 class="text-primary mb-0">Miramar vegetables and Fruitables</h1>
+                            <p class="text-secondary mb-0">Quality and Fresh products</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number"
+                                placeholder="Your Email">
+                            <button type="submit"
+                                class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
+                                style="top: 0; right: 0;">Subscribe Now</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="d-flex justify-content-end pt-3">
+                            <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">Why People Like us!</h4>
+                        <p class="mb-4">We offer quality fresh vegetables and fruits.</p>
+                        <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex flex-column text-start footer-item">
+                        <h4 class="text-light mb-3">Shop Info</h4>
+                        <a class="btn-link" href="">About Us</a>
+                        <a class="btn-link" href="">Contact Us</a>
+                        <a class="btn-link" href="">Privacy Policy</a>
+                        <a class="btn-link" href="">Terms & Condition</a>
+                        <a class="btn-link" href="">Return Policy</a>
+                        <a class="btn-link" href="">FAQs & Help</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex flex-column text-start footer-item">
+                        <h4 class="text-light mb-3">Account</h4>
+                        <a class="btn-link" href="">My Account</a>
+                        <a class="btn-link" href="">Shop details</a>
+                        <a class="btn-link" href="">Shopping Cart</a>
+                        <a class="btn-link" href="">Wishlist</a>
+                        <a class="btn-link" href="">Order History</a>
+                        <a class="btn-link" href="">International Orders</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="text-light mb-3">Contact</h4>
+                        <p>Address: Jl.Cempaka Raya No.299 RT:6 RW:8 Jakarta,Indonesia</p>
+                        <p>Email:ian.valentino88@gmail.com</p>
+                        <p>Phone: (+62) 878-5375-1057</p>
+                        <p>Payment Accepted</p>
+                        <img src="img/payment.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Ian.V</a>, All right reserved.</span>
+                </div>
+                <div class="col-md-6 my-auto text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
+                        class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
